@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --aui-green-dark: #1B3A2D;
+  --aui-green-mid: #2D5A3F;
+  --aui-green-light: #3A7A54;
+  --aui-cream: #F5F1EB;
+  --aui-white: #FFFFFF;
+  --aui-gold: #C8A84E;
+  --aui-text-dark: #1A1A1A;
+  --aui-text-muted: #5A5A5A;
+  --aui-text-light: #E8E8E8;
+  --aui-border: #E2DDD5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: var(--aui-text-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar for carousel */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
